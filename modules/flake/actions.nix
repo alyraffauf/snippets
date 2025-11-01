@@ -65,13 +65,6 @@
                   }
                   {uses = "DeterminateSystems/nix-installer-action@main";}
                   {
-                    uses = "cachix/cachix-action@master";
-                    "with" = {
-                      name = "alyraffauf";
-                      authToken = "\${{ secrets.CACHIX_AUTH_TOKEN }}";
-                    };
-                  }
-                  {
                     name = "Build package ${name}";
                     run = "nix build --accept-flake-config --print-out-paths .#packages.x86_64-linux.${name}";
                   }
@@ -82,167 +75,6 @@
         in
           devShellJobs // packageJobs;
       };
-
-      # build-darwin.yml
-      ".github/workflows/build-darwin.yml" = {
-        name = "build-darwin";
-        concurrency = {
-          cancel-in-progress = true;
-          group = "\${{ github.workflow }}-\${{ github.ref }}";
-        };
-        on = {
-          push = {
-            paths-ignore = [
-              "**/*.md"
-              ".github/**"
-              "_img/**"
-            ];
-          };
-          workflow_dispatch = {};
-        };
-        jobs =
-          lib.mapAttrs'
-          (hostname: _: {
-            name = "build-${hostname}";
-            value = {
-              runs-on = "macos-latest";
-              steps = [
-                {
-                  name = "Checkout";
-                  uses = "actions/checkout@main";
-                  "with" = {fetch-depth = 1;};
-                }
-                {
-                  name = "Install Nix";
-                  uses = "DeterminateSystems/nix-installer-action@main";
-                }
-                {
-                  name = "Cachix";
-                  uses = "cachix/cachix-action@master";
-                  "with" = {
-                    name = "alyraffauf";
-                    authToken = "\${{ secrets.CACHIX_AUTH_TOKEN }}";
-                  };
-                }
-                {
-                  name = "Build ${hostname}";
-                  run = "nix build --accept-flake-config --print-out-paths .#darwinConfigurations.${hostname}.config.system.build.toplevel";
-                }
-              ];
-            };
-          })
-          self.darwinConfigurations;
-      };
-
-      # build-nixos.yml
-      ".github/workflows/build-nixos.yml" = {
-        name = "build-nixos";
-        concurrency = {
-          cancel-in-progress = true;
-          group = "\${{ github.workflow }}-\${{ github.ref }}";
-        };
-        on = {
-          push = {
-            paths-ignore = [
-              "**/*.md"
-              ".github/**"
-              "_img/**"
-            ];
-          };
-          workflow_dispatch = {};
-        };
-        jobs =
-          lib.mapAttrs'
-          (hostname: _: {
-            name = "build-${hostname}";
-            value = {
-              runs-on = "ubuntu-latest";
-              steps = [
-                {
-                  name = "Free Disk Space (Ubuntu)";
-                  uses = "jlumbroso/free-disk-space@main";
-                }
-                {
-                  name = "Checkout";
-                  uses = "actions/checkout@main";
-                  "with" = {fetch-depth = 1;};
-                }
-                {
-                  name = "Install Nix";
-                  uses = "DeterminateSystems/nix-installer-action@main";
-                }
-                {
-                  name = "Cachix";
-                  uses = "cachix/cachix-action@master";
-                  "with" = {
-                    name = "alyraffauf";
-                    authToken = "\${{ secrets.CACHIX_AUTH_TOKEN }}";
-                  };
-                }
-                {
-                  name = "Build ${hostname}";
-                  run = "nix build --accept-flake-config --print-out-paths .#nixosConfigurations.${hostname}.config.system.build.toplevel";
-                }
-              ];
-            };
-          })
-          self.nixosConfigurations;
-      };
-
-      # # build-home-manager.yml
-      # ".github/workflows/build-home-manager.yml" = {
-      #   name = "build-home-manager";
-      #   concurrency = {
-      #     cancel-in-progress = true;
-      #     group = "\${{ github.workflow }}-\${{ github.ref }}";
-      #   };
-      #   on = {
-      #     push = {
-      #       paths-ignore = [
-      #         "**/*.md"
-      #         ".github/**"
-      #         "_img/**"
-      #       ];
-      #     };
-      #     workflow_dispatch = {};
-      #   };
-      #   jobs =
-      #     lib.mapAttrs'
-      #     (hostname: _: {
-      #       name = "build-${lib.replaceStrings ["@"] ["-"] hostname}";
-      #       value = {
-      #         runs-on = "ubuntu-latest";
-      #         steps = [
-      #           {
-      #             name = "Free Disk Space (Ubuntu)";
-      #             uses = "jlumbroso/free-disk-space@main";
-      #           }
-      #           {
-      #             name = "Checkout";
-      #             uses = "actions/checkout@main";
-      #             "with" = {fetch-depth = 1;};
-      #           }
-      #           {
-      #             name = "Install Nix";
-      #             uses = "DeterminateSystems/nix-installer-action@main";
-      #           }
-      #           {
-      #             name = "Cachix";
-      #             uses = "cachix/cachix-action@master";
-      #             "with" = {
-      #               name = "alyraffauf";
-      #               authToken = "\${{ secrets.CACHIX_AUTH_TOKEN }}";
-      #             };
-      #           }
-      #           {
-      #             name = "Build ${hostname}";
-      #             run = "nix build --accept-flake-config --print-out-paths .#homeConfigurations.${hostname}.activationPackage";
-      #           }
-      #         ];
-      #       };
-      #     })
-      #     self.homeConfigurations;
-      # };
 
       # check-nix.yml
       ".github/workflows/check-nix.yml" = {
@@ -283,9 +115,6 @@
       ".github/workflows/update-inputs.yml" = {
         name = "update-inputs";
         on = {
-          schedule = [
-            {cron = "0 6 * * 2,5";}
-          ];
           workflow_dispatch = {};
         };
         jobs = {

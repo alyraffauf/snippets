@@ -21,6 +21,4 @@ jobs:
         token: ${{ secrets.FLAKE_UPDATE_PAT }}
 name: update-inputs
 'on':
-  schedule:
-  - cron: 0 6 * * 2,5
   workflow_dispatch: {}
