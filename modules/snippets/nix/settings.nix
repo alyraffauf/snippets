@@ -11,7 +11,6 @@
           "fetch-closure"
           "flakes"
           "nix-command"
-          "recursive-nix"
         ];
 
         substituters = [
