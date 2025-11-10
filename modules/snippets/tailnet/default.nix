@@ -51,6 +51,12 @@
           vHost = "loki.${config.mySnippets.tailnet.name}";
         };
 
+        navidrome = {
+          hostName = "snowpoint";
+          port = 4533;
+          vHost = "navidrome.${config.mySnippets.tailnet.name}";
+        };
+
         ollama = {
           hostName = "jubilife";
           port = 11434;
