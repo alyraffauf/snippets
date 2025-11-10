@@ -9,12 +9,12 @@
     description = "Default ssh known hosts.";
 
     default = {
-      dewford = {
+      snowpoint = {
         hostNames = ["snowpoint" "snowpoint.local" "snowpoint.${config.mySnippets.tailnet.name}" "dewford" "dewford.local" "dewford.${config.mySnippets.tailnet.name}"];
         publicKeyFile = "${self.inputs.secrets}/publicKeys/root_dewford.pub";
       };
 
-      evergrande = {
+      celestic = {
         hostNames = ["celestic" "celestic.local" "celestic.${config.mySnippets.tailnet.name}" "evergrande" "evergrande.local" "evergrande.${config.mySnippets.tailnet.name}"];
         publicKeyFile = "${self.inputs.secrets}/publicKeys/root_evergrande.pub";
       };
@@ -29,22 +29,22 @@
         publicKeyFile = "${self.inputs.secrets}/publicKeys/root_fortree.pub";
       };
 
-      lavaridge = {
-        hostNames = ["lavaridge" "lavaridge.local" "lavaridge.${config.mySnippets.tailnet.name}"];
+      oreburgh = {
+        hostNames = ["oreburgh" "oreburgh.local" "oreburgh.${config.mySnippets.tailnet.name}" "lavaridge" "lavaridge.local" "lavaridge.${config.mySnippets.tailnet.name}"];
         publicKeyFile = "${self.inputs.secrets}/publicKeys/root_lavaridge.pub";
       };
 
-      lilycove = {
+      jubilife = {
         hostNames = ["jubilife" "jubilife.local" "jubilife.${config.mySnippets.tailnet.name}" "lilycove" "lilycove.local" "lilycove.${config.mySnippets.tailnet.name}"];
         publicKeyFile = "${self.inputs.secrets}/publicKeys/root_lilycove.pub";
       };
 
-      mauville = {
+      eterna = {
         hostNames = ["eterna" "eterna.local" "eterna.${config.mySnippets.tailnet.name}" "mauville" "mauville.local" "mauville.${config.mySnippets.tailnet.name}"];
         publicKeyFile = "${self.inputs.secrets}/publicKeys/root_mauville.pub";
       };
 
-      mossdeep = {
+      solaceon = {
         hostNames = ["solaceon" "solaceon.local" "solaceon.${config.mySnippets.tailnet.name}" "mossdeep" "mossdeep.local" "mossdeep.${config.mySnippets.tailnet.name}"];
         publicKeyFile = "${self.inputs.secrets}/publicKeys/root_mossdeep.pub";
       };
