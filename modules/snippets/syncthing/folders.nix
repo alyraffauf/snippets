@@ -8,7 +8,7 @@
         "sync" = {
           devices = [
             "allyx"
-            "snowpoint"
+            "dewford"
             "fallarbor"
             "fortree"
             "groudon"
