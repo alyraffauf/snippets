@@ -16,91 +16,91 @@
 
       default = {
         bazarr = {
-          hostName = "lilycove";
+          hostName = "jubilife";
           port = 6767;
           vHost = "bazarr.${config.mySnippets.tailnet.name}";
         };
 
         couchdb = {
-          hostName = "dewford";
+          hostName = "snowpoint";
           port = 5984;
           vHost = "couchdb.${config.mySnippets.tailnet.name}";
         };
 
         jellyfin = {
-          hostName = "lilycove";
+          hostName = "jubilife";
           port = 8096;
           vHost = "jellyfin.${config.mySnippets.tailnet.name}";
         };
 
         grafana = {
-          hostName = "mauville";
+          hostName = "eterna";
           port = 3010;
           vHost = "grafana.${config.mySnippets.tailnet.name}";
         };
 
         lidarr = {
-          hostName = "lilycove";
+          hostName = "jubilife";
           port = 8686;
           vHost = "lidarr.${config.mySnippets.tailnet.name}";
         };
 
         loki = {
-          hostName = "mauville";
+          hostName = "eterna";
           port = 3030;
           vHost = "loki.${config.mySnippets.tailnet.name}";
         };
 
         ollama = {
-          hostName = "lilycove";
+          hostName = "jubilife";
           port = 11434;
           vHost = "ollama.${config.mySnippets.tailnet.name}";
         };
 
         prometheus = {
-          hostName = "mauville";
+          hostName = "eterna";
           port = 3020;
           vHost = "prometheus.${config.mySnippets.tailnet.name}";
         };
 
         prowlarr = {
-          hostName = "lilycove";
+          hostName = "jubilife";
           port = 9696;
           vHost = "prowlarr.${config.mySnippets.tailnet.name}";
         };
 
         qbittorrent = {
-          hostName = "lilycove";
+          hostName = "jubilife";
           port = 8080;
           vHost = "qbittorrent.${config.mySnippets.tailnet.name}";
         };
 
         radarr = {
-          hostName = "lilycove";
+          hostName = "jubilife";
           port = 7878;
           vHost = "radarr.${config.mySnippets.tailnet.name}";
         };
 
         sonarr = {
-          hostName = "lilycove";
+          hostName = "jubilife";
           port = 8989;
           vHost = "sonarr.${config.mySnippets.tailnet.name}";
         };
 
         tautulli = {
-          hostName = "lilycove";
+          hostName = "jubilife";
           port = 8181;
           vHost = "tautulli.${config.mySnippets.tailnet.name}";
         };
 
         uptime-kuma = {
-          hostName = "dewford";
+          hostName = "snowpoint";
           port = 3001;
           vHost = "uptime-kuma.${config.mySnippets.tailnet.name}";
         };
 
         vscode = {
-          hostName = "lilycove";
+          hostName = "jubilife";
           port = 3020;
           vHost = "vscode.${config.mySnippets.tailnet.name}";
         };
