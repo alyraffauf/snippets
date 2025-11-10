@@ -5,68 +5,67 @@
 
     default = {
       aly-codes = {
-        hostName = "mossdeep";
+        hostName = "solaceon";
         port = 8282;
         vHost = "aly.codes";
       };
 
       aly-social = {
-        hostName = "mossdeep";
+        hostName = "solaceon";
         port = 3000;
         vHost = "aly.social";
       };
 
       audiobookshelf = {
-        hostName = "mauville";
+        hostName = "eterna";
         port = 13378;
         vHost = "audiobookshelf.cute.haus";
       };
 
       glance = {
-        hostName = "mauville";
+        hostName = "eterna";
         port = 8080;
         vHost = "cute.haus";
       };
 
       forgejo = {
-        hostName = "mossdeep";
+        hostName = "solaceon";
         port = 3001;
         sshVHost = "ssh.aly.codes";
         vHost = "git.aly.codes";
       };
 
       immich = {
-        hostName = "lilycove";
+        hostName = "jubilife";
         port = 2283;
         vHost = "immich.cute.haus";
       };
 
       karakeep = {
-        hostName = "mauville";
+        hostName = "eterna";
         port = 7020;
         vHost = "karakeep.cute.haus";
       };
 
       ombi = {
-        hostName = "lilycove";
+        hostName = "jubilife";
         port = 5000;
         vHost = "ombi.cute.haus";
       };
 
       plex = {
-        hostName = "lilycove";
+        hostName = "jubilife";
         port = 32400;
         vHost = "plex.cute.haus";
       };
 
       uptime-kuma = {
-        # Only used for status pages
-        hostName = "dewford";
+        hostName = "snowpoint";
         port = 3001;
       };
 
       vaultwarden = {
-        hostName = "dewford";
+        hostName = "snowpoint";
         port = 8222;
         vHost = "vault.cute.haus";
       };
