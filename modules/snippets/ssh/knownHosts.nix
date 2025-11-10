@@ -10,12 +10,12 @@
 
     default = {
       dewford = {
-        hostNames = ["dewford" "dewford.local" "dewford.${config.mySnippets.tailnet.name}"];
+        hostNames = ["snowpoint" "snowpoint.local" "snowpoint.${config.mySnippets.tailnet.name}" "dewford" "dewford.local" "dewford.${config.mySnippets.tailnet.name}"];
         publicKeyFile = "${self.inputs.secrets}/publicKeys/root_dewford.pub";
       };
 
       evergrande = {
-        hostNames = ["evergrande" "evergrande.local" "evergrande.${config.mySnippets.tailnet.name}"];
+        hostNames = ["celestic" "celestic.local" "celestic.${config.mySnippets.tailnet.name}" "evergrande" "evergrande.local" "evergrande.${config.mySnippets.tailnet.name}"];
         publicKeyFile = "${self.inputs.secrets}/publicKeys/root_evergrande.pub";
       };
 
@@ -35,17 +35,17 @@
       };
 
       lilycove = {
-        hostNames = ["lilycove" "lilycove.local" "lilycove.${config.mySnippets.tailnet.name}"];
+        hostNames = ["jubilife" "jubilife.local" "jubilife.${config.mySnippets.tailnet.name}" "lilycove" "lilycove.local" "lilycove.${config.mySnippets.tailnet.name}"];
         publicKeyFile = "${self.inputs.secrets}/publicKeys/root_lilycove.pub";
       };
 
       mauville = {
-        hostNames = ["mauville" "mauville.local" "mauville.${config.mySnippets.tailnet.name}"];
+        hostNames = ["eterna" "eterna.local" "eterna.${config.mySnippets.tailnet.name}" "mauville" "mauville.local" "mauville.${config.mySnippets.tailnet.name}"];
         publicKeyFile = "${self.inputs.secrets}/publicKeys/root_mauville.pub";
       };
 
       mossdeep = {
-        hostNames = ["mossdeep" "mossdeep.local" "mossdeep.${config.mySnippets.tailnet.name}"];
+        hostNames = ["solaceon" "solaceon.local" "solaceon.${config.mySnippets.tailnet.name}" "mossdeep" "mossdeep.local" "mossdeep.${config.mySnippets.tailnet.name}"];
         publicKeyFile = "${self.inputs.secrets}/publicKeys/root_mossdeep.pub";
       };
 
