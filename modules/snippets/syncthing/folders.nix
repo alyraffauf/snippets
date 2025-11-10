@@ -66,7 +66,7 @@
 
         "roms" = {
           devices = [
-            "snowpoint"
+            "dewford"
             "oreburgh"
             "jubilife"
             "eterna"
