@@ -8,14 +8,14 @@
         "sync" = {
           devices = [
             "allyx"
-            "dewford"
+            "snowpoint"
             "fallarbor"
             "fortree"
             "groudon"
             "kyogre"
-            "lavaridge"
-            "lilycove"
-            "mauville"
+            "oreburgh"
+            "jubilife"
+            "eterna"
             "pacifidlog"
             "rustboro"
             "slateport"
@@ -34,9 +34,9 @@
         "screenshots" = {
           devices = [
             "fallarbor"
-            "lavaridge"
-            "lilycove"
-            "mauville"
+            "oreburgh"
+            "jubilife"
+            "eterna"
             "pacifidlog"
             "rustboro"
             "slateport"
@@ -54,8 +54,8 @@
 
         "music" = {
           devices = [
-            "lilycove"
-            "mauville"
+            "jubilife"
+            "eterna"
             "pacifidlog"
             "rustboro"
             "sootopolis"
@@ -66,10 +66,10 @@
 
         "roms" = {
           devices = [
-            "dewford"
-            "lavaridge"
-            "lilycove"
-            "mauville"
+            "snowpoint"
+            "oreburgh"
+            "jubilife"
+            "eterna"
             "pacifidlog"
             "sootopolis"
           ];
