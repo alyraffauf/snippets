@@ -54,7 +54,6 @@
 
         "music" = {
           devices = [
-            "jubilife"
             "eterna"
             "pacifidlog"
             "rustboro"
