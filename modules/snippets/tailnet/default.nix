@@ -63,6 +63,12 @@
           vHost = "ollama.${config.mySnippets.tailnet.name}";
         };
 
+        photoprism = {
+          hostName = "jubilife";
+          port = 2342;
+          vHost = "photoprism.${config.mySnippets.tailnet.name}";
+        };
+
         prometheus = {
           hostName = "eterna";
           port = 3020;
