@@ -8,18 +8,19 @@
         "sync" = {
           devices = [
             "allyx"
-            "dewford"
+            "eterna"
             "fallarbor"
             "fortree"
             "groudon"
+            "jubilife"
             "kyogre"
             "oreburgh"
-            "jubilife"
-            "eterna"
             "pacifidlog"
+            "rp5"
             "rustboro"
             "slateport"
             "sootopolis"
+            "thor"
           ];
 
           id = "default";
@@ -65,12 +66,13 @@
 
         "roms" = {
           devices = [
-            "dewford"
-            "oreburgh"
-            "jubilife"
             "eterna"
+            "jubilife"
+            "oreburgh"
             "pacifidlog"
+            "rp5"
             "sootopolis"
+            "thor"
           ];
 
           id = "emudeck";
