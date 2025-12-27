@@ -71,6 +71,7 @@
             "oreburgh"
             "pacifidlog"
             "rp5"
+            "rustboro"
             "sootopolis"
             "thor"
           ];
