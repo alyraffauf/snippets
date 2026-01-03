@@ -59,7 +59,6 @@
           devices = [
             "eterna"
             "pacifidlog"
-            "rustboro"
             "sootopolis"
           ];
 
