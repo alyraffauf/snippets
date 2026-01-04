@@ -20,6 +20,7 @@
             "rp5"
             "rustboro"
             "slateport"
+            "snowpoint"
             "sootopolis"
             "thor"
           ];
@@ -43,6 +44,7 @@
             "petalburg"
             "rustboro"
             "slateport"
+            "snowpoints"
             "sootopolis"
           ];
 
