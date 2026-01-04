@@ -44,7 +44,7 @@
             "petalburg"
             "rustboro"
             "slateport"
-            "snowpoints"
+            "snowpoint"
             "sootopolis"
           ];
 
