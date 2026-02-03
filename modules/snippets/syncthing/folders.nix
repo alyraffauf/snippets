@@ -23,6 +23,7 @@
             "snowpoint"
             "sootopolis"
             "thor"
+            "verdanturf"
           ];
 
           id = "default";
@@ -46,6 +47,7 @@
             "slateport"
             "snowpoint"
             "sootopolis"
+            "verdanturf"
           ];
 
           id = "screenshots";
