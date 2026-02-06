@@ -17,12 +17,10 @@
             "oreburgh"
             "pacifidlog"
             "petalburg"
-            "rp5"
             "rustboro"
             "slateport"
             "snowpoint"
             "sootopolis"
-            "thor"
             "verdanturf"
           ];
 
