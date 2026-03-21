@@ -56,13 +56,6 @@
           };
         };
 
-        "music" = {
-          devices = [
-          ];
-
-          id = "6nzmu-z9der";
-        };
-
         "roms" = {
           devices = [
             "jubilife"
@@ -70,6 +63,7 @@
             "pacifidlog"
             "petalburg"
             "rp5"
+            "rpclassic"
             "rustboro"
             "sootopolis"
             "thor"
