@@ -38,7 +38,6 @@
             "fallarbor"
             "oreburgh"
             "jubilife"
-            "eterna"
             "pacifidlog"
             "petalburg"
             "rustboro"
@@ -59,9 +58,6 @@
 
         "music" = {
           devices = [
-            "eterna"
-            "pacifidlog"
-            "sootopolis"
           ];
 
           id = "6nzmu-z9der";
@@ -69,7 +65,6 @@
 
         "roms" = {
           devices = [
-            "eterna"
             "jubilife"
             "oreburgh"
             "pacifidlog"
@@ -81,6 +76,11 @@
           ];
 
           id = "emudeck";
+
+          versioning = {
+            params.cleanoutDays = "3";
+            type = "trashcan";
+          };
         };
       };
     };
