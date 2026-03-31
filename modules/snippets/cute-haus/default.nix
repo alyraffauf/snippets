@@ -49,7 +49,7 @@
 
       morsels = {
         hostName = "solaceon";
-        port = 8383;
+        port = 8484;
         vHost = "morels.blue";
       };
 
