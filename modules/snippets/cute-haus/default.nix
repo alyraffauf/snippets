@@ -47,6 +47,12 @@
         vHost = "karakeep.cute.haus";
       };
 
+      morsels = {
+        hostName = "solaceon";
+        port = 8383;
+        vHost = "morels.blue";
+      };
+
       ombi = {
         hostName = "jubilife";
         port = 5000;
