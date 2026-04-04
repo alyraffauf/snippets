@@ -16,10 +16,10 @@
         vHost = "aly.social";
       };
 
-      atboards = {
+      atbbs = {
         hostName = "celestic";
         port = 8582;
-        vHost = "atboards.xyz";
+        vHost = "atbbs.xyz";
       };
 
       audiobookshelf = {
