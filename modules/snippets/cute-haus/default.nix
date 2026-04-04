@@ -16,6 +16,12 @@
         vHost = "aly.social";
       };
 
+      atboards = {
+        hostName = "celestic";
+        port = 8582;
+        vHost = "atboards.xyz";
+      };
+
       audiobookshelf = {
         hostName = "eterna";
         port = 13378;
