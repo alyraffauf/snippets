@@ -17,7 +17,7 @@
       };
 
       atbbs = {
-        hostName = "celestic";
+        hostName = "eterna";
         port = 8582;
         vHost = "atbbs.xyz";
       };
@@ -54,7 +54,7 @@
       };
 
       morsels = {
-        hostName = "solaceon";
+        hostName = "eterna";
         port = 8484;
         vHost = "morels.blue";
       };
