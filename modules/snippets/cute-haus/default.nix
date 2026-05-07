@@ -5,7 +5,7 @@
 
     default = {
       aly-codes = {
-        hostName = "celestic";
+        hostName = "solaceon";
         port = 8282;
         vHost = "aly.codes";
       };
